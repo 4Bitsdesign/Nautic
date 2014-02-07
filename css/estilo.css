@@ -1,0 +1,25 @@
+@font-face{font-family:'Vegur-Regular';src:url("../fonts/Vegur-Regular.otf") format('opentype');font-weight:normal;font-style:normal}
+@font-face{font-family:'Vegur-Bold';src:url("../fonts/Vegur-Bold.otf") format('opentype');font-weight:bold;font-style:normal}
+@font-face{font-family:'Bentham';src:url("../fonts/Bentham.otf") format('opentype');font-weight:normal;font-style:normal}
+@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot");src:url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.svg#icomoon") format('svg');font-weight:normal;font-style:normal}
+html{width:100%}
+body{width:100%}
+.inicio{background:url("../images/background.jpg") no-repeat center center;background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;width:100%;position:relative;overflow:hidden}
+.inicio:after{content:"\e605";font-family:'icomoon';font-weight:normal;font-size:1.5em;color:#fff;border:solid 1px #fff;border-radius:50%;padding:0 0 -15px 0;position:absolute;left:50%;top:83%;margin:0 0 0 -15px}
+.inicio .logo{margin-left:-50px}
+.inicio .logo img{width:410px;margin:-50px auto 0 auto;display:block}
+.inicio .lema{font-family:'Vegur-Bold';font-weight:bold;font-size:1.3em;color:#fff;text-align:center;width:14em;margin:-2.5em auto;display:block;border:solid 5px #fff;padding:2.7em .1em}
+.inicio address{width:16em;text-align:center;margin:8em auto;padding:2em 0}
+.inicio address a{text-decoration:none;font-family:'Vegur-Regular';font-style:normal;color:#fff;font-size:.96em;display:block;margin-bottom:1em}
+.inicio address .direccion:before{content:"\e600";font-family:'icomoon';font-weight:normal;font-size:1.5em;color:#fff}
+.inicio address .telefono:before{content:"\e606";font-family:'icomoon';font-weight:normal;font-size:1.5em;color:#fff}
+.boton{position:fixed;display:block;background:rgba(0,0,0,0.9);text-decoration:none;top:45px;right:135px;padding:8px;z-index:2;border-radius:10px}
+.boton:before{content:"\e601";color:#808080;font-family:'icomoon';font-style:normal;font-size:2em}
+.menu{background:rgba(0,0,0,0.9);width:150px;top:0;right:0;position:fixed;height:100%;z-index:1}
+.menu ul{margin-top:150px}
+.menu ul li{display:block;margin:0 0 20px -2px}
+.menu ul li a{text-decoration:none;color:#fff;font-family:'Bentham';font-style:normal;font-size:.8em}
+.menu .media{margin:50px 0 0 40px}
+.menu .media a{text-decoration:none;position:relative;font-size:1.3em;padding-right:10px}
+.menu .media .g:before{content:"\e60a";color:#fff;font-family:'icomoon';font-style:normal}
+.menu .media .f:before{content:"\e609";color:#fff;font-family:'icomoon';font-style:normal}
