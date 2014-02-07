@@ -1,17 +1,8 @@
-/*$(function(){
-	$(".menu-button").click(function(param)
-			{
-				//param.preventDefault();
 
-				$(".dropdown").slideToggle();
-			}
-	);
-});
-*/
 
 $(function() {
     
-    var boton = $( ".menu-button" );
+    var boton = $( ".boton" );
 
     function efecto() {
       
@@ -44,6 +35,8 @@ $(function() {
       efecto();
 
     });
+
+
 
     $( window ).load(function() {
       efecto();
