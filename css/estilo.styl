@@ -39,9 +39,8 @@ body
 	width 100%
 
 
-
-.inicio
-
+.wrapper-inicio
+	
 	background url('../images/background.jpg') no-repeat center center
 	background-attachment scroll
 	-webkit-background-size cover
@@ -51,6 +50,8 @@ body
 	width 100%
 	position relative
 	overflow hidden
+
+	padding 0 0 70px 0
 
 	&:after
 		content "\e605"
@@ -64,64 +65,79 @@ body
 		position absolute
 		left 50%
 		top 83%
-		margin 0 0 0 -15px
-
-	.logo
+		margin 20px 0 0 -15px
 		
-		margin-left -50px
+	
 
-		img 	
-			width 390px	
-			margin -15% auto 0 auto
-			display block
+	.inicio
 
-	.lema
-		font-family 'Vegur-Bold'
-		font-weight bold
-		font-size 1.3em
-		color white
-		text-align center
-		width 77%
-		margin -20% 0 0 0
-		display block
-		border solid 5px white
-		padding 5% 0.1em
-		position relative
-		left 10%
-		right 13%
-		display inline-block
 
-	address
-		width 16em
-		text-align center
-		margin 5% auto 20% auto
-		padding 2em 0
-		a 
-			text-decoration none
-			font-family 'Vegur-Regular'
-			font-style normal
+		
+
+		.logo
+			
+			
+
+			img 	
+				width 300px	
+				margin 20px auto 0 auto
+				display block
+
+		.lema
+			font-family 'Vegur-Bold'
+			font-weight bold
+			font-size 1.3em
 			color white
-			font-size 0.96em
+			text-align center
+			width 77%
+			margin 30px 0 0 0
 			display block
-			margin-bottom 1em
+			border solid 5px white
+			padding 5% 0.1em
+			position relative
+			left 10%
+			right 13%
+			display inline-block
 
-		.direccion
-			&:before
-				content "\e600"
-				
-				font-family 'icomoon'
-				font-weight normal
-				font-size 1.5em
-				color white
+	.arriba
+		
+		width 100%
+		
+		address
+			width 16em
+			text-align center
+			margin 10px auto 70px auto
+			padding 2em 0
+			margin 0 auto
 
-		.telefono
-			&:before
-				content "\e606"
-				
-				font-family 'icomoon'
-				font-weight normal
-				font-size 1.5em
+			a 
+				text-decoration none
+				font-family 'Vegur-Regular'
+				font-style normal
 				color white
+				font-size 0.96em
+				display block
+				margin-bottom 1em
+
+			.direccion
+				&:before
+					content "\e600"
+					
+					font-family 'icomoon'
+					font-weight normal
+					font-size 1.5em
+					color white
+
+			.telefono
+				&:before
+					content "\e606"
+					
+					font-family 'icomoon'
+					font-weight normal
+					font-size 1.5em
+					color white
+
+	
 
 
 .boton
@@ -129,7 +145,7 @@ body
 	display block
 	background rgba(black,0.9)
 	text-decoration none
-	top 45px
+	top 25px
 	right 135px
 	padding 8px
 	z-index 2
