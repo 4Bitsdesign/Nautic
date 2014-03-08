@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"h",
+				"hayScroll"
+			],
+			[
+				"sc",
+				"hayScroll"
+			],
+			[
 				"v",
 				"Vegur-Regular"
 			],
@@ -103,7 +111,63 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1382,
+				"buffer_size": 3158,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/aside.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/menu.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/scrollbar.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/estilo.styl",
+			"settings":
+			{
+				"buffer_size": 5074,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/scroll.js",
+			"settings":
+			{
+				"buffer_size": 3471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/footer.js",
+			"settings":
+			{
+				"buffer_size": 1727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/menu.js",
+			"settings":
+			{
+				"buffer_size": 1286,
 				"line_ending": "Unix"
 			}
 		}
@@ -111,9 +175,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 369.0,
+		"height": 54.0,
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"pack",
 				"Package Control: Install Package"
@@ -156,6 +228,10 @@
 	},
 	"file_history":
 	[
+		"/home/maxwell/git/Nautic/js/jquery.mousewheel.js",
+		"/home/maxwell/git/Nautic/index.html",
+		"/home/maxwell/git/Nautic/css/estilo.styl",
+		"/home/maxwell/git/Nautic/js/menu.js",
 		"/home/maxwell/GitHub/carloscueto/index.html",
 		"/home/maxwell/GitHub/carloscueto/js/scrollbar.js",
 		"/home/maxwell/GitHub/carloscueto/css/style.styl",
@@ -203,6 +279,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"window",
+			"bot",
+			"top",
+			"window",
+			"'html'",
+			".wrapper-inicio",
+			"window",
+			"hidden",
+			"15px",
+			"section id",
+			"section",
 			"50em",
 			"1em",
 			"':",
@@ -235,7 +322,34 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1382,
+						"buffer_size": 3158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3158,
+								3158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/aside.js",
+					"settings":
+					{
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -248,11 +362,181 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 416.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/menu.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/scrollbar.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "css/estilo.styl",
+					"settings":
+					{
+						"buffer_size": 5074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4437,
+								4437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4335.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/scroll.js",
+					"settings":
+					{
+						"buffer_size": 3471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2136,
+								2136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1785.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/footer.js",
+					"settings":
+					{
+						"buffer_size": 1727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1470,
+								1470
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1301.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/menu.js",
+					"settings":
+					{
+						"buffer_size": 1286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								772,
+								772
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 417.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -277,11 +561,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.24696847211,
 			1.0
 		],
 		"rows":

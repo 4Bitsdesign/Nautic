@@ -5,14 +5,37 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Nautic - Retaurante</title>
+
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilo.css">
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.0/jquery.mobile.min.js"></script>
+
 	<script type="text/javascript" src="js/menu.js"></script>
+
+	<script type="text/javascript" src="js/footer.js"></script>
+
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+	<script type="text/javascript" src="js/scroll.js"></script>
+
+	
 </head>
 <body>
-	<div class="wrapper-inicio">
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-56CDNB"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-56CDNB');</script>
+	<!-- End Google Tag Manager -->
+
+	<div class="wrapper-inicio actual anterior">
 		<header class="inicio">
 			<figure class="logo">
 				<img src="images/logo.png" alt="Nautic">
@@ -23,7 +46,7 @@
 				
 		</header>
 
-		<footer  class="arriba">
+		<footer  class="arriba" id="footer">
 			<address>
 				<a class="direccion" href="#">
 					Puerto Deportivo Marina Internacional
@@ -37,20 +60,38 @@
 
 	</div>
 
-		<section id="quienes-somos">
-			<h1>
-				¿Quiénes somos?
-			</h1>
-			<p class="contenido">
-				Holahol agolaHolaholag olaHolaholag olaHolahol agolaHolah olagolaHola holagola Holaholagola Holaholago laHolaholag olaHolahol agolaHolahol agolaHolahola golaHolahol agolaHolaho lagolaHolahol agolaHolahola golaHolahola golaHolaholago laHolahola golaHolaho lagolaHola holagolaHol aholagolaHo laholagola Holaholagola
-			</p>
-		</section>
+	<section class="scndry-section siguiente" id="quienes-somos">
+		<h1>
+			¿Quiénes somos?
+		</h1>
+		<p class="contenido">
+			Holahol agolaHolaholag olaHolaholag olaHolahol agolaHolah olagolaHola holagola Holaholagola Holaholago laHolaholag olaHolahol agolaHolahol agolaHolahola golaHolahol agolaHolaho lagolaHolahol agolaHolahola golaHolahola golaHolaholago laHolahola golaHolaho lagolaHola holagolaHol aholagolaHo laholagola Holaholagola
+		</p>
+	</section>
+
+	<section class="scndry-section" id="galeria">
+		<h1>
+			Galería
+		</h1>
+		<p class="contenido">
+			Holahol agolaHolaholag olaHolaholag olaHolahol agolaHolah olagolaHola holagola Holaholagola Holaholago laHolaholag olaHolahol agolaHolahol agolaHolahola golaHolahol agolaHolaho lagolaHolahol agolaHolahola golaHolahola golaHolaholago laHolahola golaHolaho lagolaHola holagolaHol aholagolaHo laholagola Holaholagola
+		</p>
+	</section>
+
+	<section class="scndry-section" id="contacto">
+		<h1>
+			Contacto
+		</h1>
+		<p class="contenido">
+			Holahol agolaHolaholag olaHolaholag olaHolahol agolaHolah olagolaHola holagola Holaholagola Holaholago laHolaholag olaHolahol agolaHolahol agolaHolahola golaHolahol agolaHolaho lagolaHolahol agolaHolahola golaHolahola golaHolaholago laHolahola golaHolaho lagolaHola holagolaHol aholagolaHo laholagola Holaholagola
+		</p>
+	</section>
 
 		
 
 
 
-	<a href="#" class="boton">
+	<a href="#" class="boton toggled">
 			
 	</a>
 	<nav class="menu">
