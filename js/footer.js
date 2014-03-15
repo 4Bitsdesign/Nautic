@@ -1,8 +1,6 @@
 $(function(){
 
-	var hayScroll = false;
-	var hayUp = false;
-
+	
 	var footer = $("#footer");
 	var address = $("#footer>address");
 	var nth = $("address>a:nth-of-type(2)");
@@ -57,63 +55,45 @@ $(function(){
 
 	
 
-	function efecto () {
-		
-		hayScroll = false;
+	Efecto = function () {
 
-		var winpos = $(window).scrollTop();
-		
-		if(winpos > 50)
-		{
-			if(footer.hasClass("arriba"))
+		return function() {
+			var inicio_height = $(".wrapper-inicio").height();
+			var win_bot = $('body').scrollTop()+$('body').height();
+			var win_top = $('body').scrollTop();
+
+			
+
+			if(win_bot > (inicio_height))
 			{
-				footer.removeClass("arriba");
-				footer.addClass("medio");
-				footer.animate(footer_medio,0);
-				address.animate(address_medio,0);
-				nth.animate(a_nth_medio,0);
-				wrapper.animate({"padding-bottom":"250px"},0);
+				if(footer.hasClass("arriba"))
+				{
+					footer.removeClass("arriba");
+					footer.addClass("medio");
+					footer.animate(footer_medio,0);
+					address.animate(address_medio,0);
+					nth.animate(a_nth_medio,0);
+					//wrapper.animate({"padding-bottom":"250px"},0);
+
+				}
 			}
+			if(win_bot <= (inicio_height))
+			{
+				if(footer.hasClass("medio"))
+				{
+					footer.removeClass("medio");
+					footer.addClass("arriba");
+					footer.animate(footer_arriba,0);
+					address.animate(address_arriba,0);
+					nth.animate(a_nth_arriba,0);
+					wrapper.animate({"padding-bottom":"0"},0);
+				}
+			}	
 		}
-		if(winpos < 50)
-		{
-			if(footer.hasClass("medio"))
-			{
-				footer.removeClass("medio");
-				footer.addClass("arriba");
-				footer.animate(footer_arriba,0);
-				address.animate(address_arriba,0);
-				nth.animate(a_nth_arriba,0);
-				wrapper.animate({"padding-bottom":"0"},0);
-			}
-		}	
 
 	};
 
-	$(document).on("vmouseup", function(){
-
-		hayUp = true;
-
-	});
-
-
-	$('body').scroll(function(){
-
-		hayScroll = true;	
-
-	});
-
-	setInterval(function(){
-		
-		if(hayScroll && hayUp)
-		{
-			efecto();
-			hayScroll = false;
-			hayUp = false;
-		}
-
-
-	}, 200);
+	
 
 
 });

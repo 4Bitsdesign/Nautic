@@ -1,6 +1,7 @@
 $(function(){
 
-	
+	var portrait = true;
+
 	var hayScroll = false;
 	var mouseDown = false;
 
@@ -17,14 +18,16 @@ $(function(){
 
 	var cont_actual = 0;
 
-	
 
 	function scrll_to(xpos){
 
 
       $('html, body').animate({
           scrollTop: xpos
-          },      100, 'linear');
+          },      100, 'linear', function(){
+          	efecto = window.Efecto();
+			efecto();
+          });
     };
 
     function scrll_top(elemento){
@@ -33,8 +36,6 @@ $(function(){
 		for(var i = 0; i < cont_actual; i++)
 			xpos += secciones[cont_actual].height();
 
-      console.log("xpos "+xpos);
-
       $('html, body').animate({
           scrollTop: xpos
           },      200);
@@ -42,7 +43,7 @@ $(function(){
 
     function scrll(delta){
 
-      var posy = - delta*0.05;
+      var posy = - delta*0.2;
 
       $('body').animate({
           scrollTop: '+=' + posy
@@ -69,81 +70,84 @@ $(function(){
 
 		var siguiente_top = actual_bot;
 
-		console.log("-----------------------");
-		console.log("anterior_bot "+anterior_bot); 
-		console.log("actual_bot "+actual_bot);
-		console.log("actual_top "+actual_top);
-		console.log("siguiente_top "+siguiente_top);
-		console.log("win_top "+win_top);
-		console.log("win_bot "+win_bot);
-		console.log("-----------------------");
+		// console.log("-----------------------");
+		// console.log("anterior_bot "+anterior_bot); 
+		// console.log("actual_bot "+actual_bot);
+		// console.log("actual_top "+actual_top);
+		// console.log("siguiente_top "+siguiente_top);
+		// console.log("win_top "+win_top);
+		// console.log("win_bot "+win_bot);
+		// console.log("-----------------------");
 
+		if(portrait){
+			if(win_top > (actual_top) && win_bot < (siguiente_top))
+			{
+				scrll_top(actual);
+			}
+			else if(win_bot >= (siguiente_top+5))
+			{
+				scrll_to(siguiente_top);
 
-		if(win_top > (actual_top) && win_bot < (siguiente_top))
-		{
-			scrll_top(actual);
-		}
-		else if(win_bot >= (siguiente_top+5))
-		{
-			scrll_to(siguiente_top)
+				if(cont_actual != 0)
+					secciones[cont_actual-1].removeClass("anterior");
+				else
+					secciones[cont_actual].removeClass("anterior");
 
-			if(cont_actual != 0)
-				secciones[cont_actual-1].removeClass("anterior");
-			else
-				secciones[cont_actual].removeClass("anterior");
+				secciones[cont_actual].removeClass("actual");
 
-			secciones[cont_actual].removeClass("actual");
+				if(cont_actual < 3)
+					secciones[cont_actual+1].removeClass("siguiente");
+				else
+					secciones[cont_actual].removeClass("siguiente");
+				
 
-			if(cont_actual < 3)
-				secciones[cont_actual+1].removeClass("siguiente");
-			else
-				secciones[cont_actual].removeClass("siguiente");
-			
+				/////////////////
 
-			/////////////////
+				if(cont_actual < 3) ++cont_actual;
 
-			++cont_actual;
-
-			secciones[cont_actual-1].addClass("anterior");
-			secciones[cont_actual].addClass("actual");
-			
-			if(cont_actual < 3)
-				secciones[cont_actual+1].addClass("siguiente");
-			else
-				secciones[cont_actual].addClass("siguiente");
-
-			
-
-		}
-		else if(win_top < (anterior_bot))
-		{
-			scrll_to(anterior_top);
-
-			if(cont_actual != 0)
-				secciones[cont_actual-1].removeClass("anterior");
-			else
-				secciones[cont_actual].removeClass("anterior");
-
-			secciones[cont_actual].removeClass("actual");
-
-			if(cont_actual < 3)
-				secciones[cont_actual+1].removeClass("siguiente");
-			else
-				secciones[cont_actual].removeClass("siguiente");
-
-			////////////////
-
-			--cont_actual;
-
-			secciones[cont_actual+1].addClass("siguiente");
-			secciones[cont_actual].addClass("actual");
-
-			if(cont_actual > 0)
 				secciones[cont_actual-1].addClass("anterior");
-			else
-				secciones[cont_actual].addClass("anterior");
-			 
-		}
+				secciones[cont_actual].addClass("actual");
+				
+				if(cont_actual < 3)
+					secciones[cont_actual+1].addClass("siguiente");
+				else
+					secciones[cont_actual].addClass("siguiente");
+
+				
+
+			}
+			else if(win_top < (anterior_bot))
+			{
+				scrll_to(anterior_top);
+
+				if(cont_actual != 0)
+					secciones[cont_actual-1].removeClass("anterior");
+				else
+					secciones[cont_actual].removeClass("anterior");
+
+				secciones[cont_actual].removeClass("actual");
+
+				if(cont_actual < 3)
+					secciones[cont_actual+1].removeClass("siguiente");
+				else
+					secciones[cont_actual].removeClass("siguiente");
+
+				////////////////
+
+				if(cont_actual > 0) --cont_actual;
+
+				secciones[cont_actual+1].addClass("siguiente");
+				secciones[cont_actual].addClass("actual");
+
+				if(cont_actual > 0)
+					secciones[cont_actual-1].addClass("anterior");
+				else
+					secciones[cont_actual].addClass("anterior");
+				 
+			}
+		}		
+		
+		
 	};
 
 
@@ -173,17 +177,13 @@ $(function(){
 				var actual_bot = anterior_bot + actual.height();
 				
 				var delta = event.pageY - initPos;
-				if(win_bot >= (actual_bot-0.0000001)){
+
 				scrll(delta);
-				hayScroll = true;}
+				hayScroll = true;
+
 			}
 	});
 
-	// $(window).on("mousewheel", function(event){
-	// 		scrll(event.deltaY);
-	// 		hayScroll = true;
-
-	// });
 
 
 	setInterval(function(){
@@ -197,8 +197,31 @@ $(function(){
 
 	$( window ).load(function() {
       hayScroll = false;
+      if(window.matchMedia( "(orientation: landscape" ).matches) 
+      {
+      	portrait = false;
+      	$("body").addClass("landscape");
+    	$("html").addClass("landscape");
+      }
+    });
+
+    $( window ).on("orientationchange", function(event){
+    	if(event.orientation=="portrait") 
+    	{
+    		portrait = true;
+    		$("body").removeClass("landscape");
+    		$("html").removeClass("landscape");
+    	}
+    	else
+    	{
+    		portrait = false;
+    		$("body").addClass("landscape");
+    		$("html").addClass("landscape");
+    	}
 
     });
+
+    
 
 	
 });

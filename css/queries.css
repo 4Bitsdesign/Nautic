@@ -1,0 +1,8 @@
+@media only screen and (orientation: landscape){html{height:auto}
+body{height:auto}
+.scndry-section{overflow:auto;-moz-overflow:auto;-moz-overflow-x:auto;-moz-overflow-y:auto;height:100%}
+.wrapper-inicio{overflow:auto;-moz-overflow:auto;-moz-overflow-x:auto;-moz-overflow-y:auto;height:100%}
+#quienes-somos h1{background:url("../images/fondo-5-nublado.png") no-repeat -50px center}
+#galeria h1{background:url("../images/fondo-1-bailarina.png") no-repeat -50px center}
+#contacto h1{background:url("../images/fondo-3-mesas-copas.png") no-repeat -50px center}
+}
