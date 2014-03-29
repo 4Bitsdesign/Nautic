@@ -4,13 +4,12 @@
 @font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot");src:url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.svg#icomoon") format('svg');font-weight:normal;font-style:normal}
 noscript{display:none}
 script{display:none}
-html{width:100%;height:100%;overflow:hidden;-moz-overflow:hidden;-moz-overflow-x:hidden;-moz-overflow-y:hidden;margin:0}
-body{width:100%;height:100%;overflow:hidden;-moz-overflow:hidden;-moz-overflow-x:hidden;-moz-overflow-y:hidden}
+html{width:100%;min-height:100%;margin:0}
+body{width:100%;min-height:100%;background:#e3a857;overflow-x:hidden;-moz-overflow-x:hidden}
 footer{z-index:50}
 .ui-loader{display:none;visibility:hidden}
-.landscape{overflow:scroll;-moz-overflow:scroll;-moz-overflow-y:scroll}
-.wrapper-inicio{background:url("../images/background.png") no-repeat center center;background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;width:100%;height:100vh;position:relative;overflow:auto;-moz-overflow:auto;-moz-overflow-x:auto;-moz-overflow-y:auto}
-.wrapper-inicio:after{content:"\e605";font-family:'icomoon';font-weight:normal;font-size:1.5em;color:#fff;border:solid 1px #fff;border-radius:50%;padding:0 0 -15px 0;position:absolute;left:50%;top:425px;margin:20px 0 0 -15px}
+.wrapper-inicio{background:url("../images/background.png") no-repeat center center;background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;width:95%;position:relative;overflow:auto;margin:5px auto 20px auto;border-radius:5px;box-shadow:2px 1px 6px 0 rgba(0,0,0,0.6)}
+.wrapper-inicio:after{content:"\e605";font-family:'icomoon';font-weight:normal;font-size:1.5em;color:#fff;border:solid 1px #fff;border-radius:50%;padding:0 0 -15px 0;position:absolute;left:50%;top:450px;margin:20px 0 0 -15px}
 .wrapper-inicio .inicio .logo img{width:300px;margin:20px auto 0 auto;display:block}
 .wrapper-inicio .inicio .lema{font-family:'Vegur-Bold';font-weight:bold;font-size:1.3em;color:#fff;text-align:center;width:77%;margin:30px 0 0 0;display:block;border:solid 5px #fff;padding:5% .1em;position:relative;left:10%;right:13%;display:inline-block}
 .wrapper-inicio .arriba{width:100%}
@@ -27,10 +26,10 @@ footer{z-index:50}
 #quienes-somos h1{background:url("../images/fondo-5-nublado.png") no-repeat center center}
 #galeria h1{background:url("../images/fondo-1-bailarina.png") no-repeat center center}
 #contacto h1{background:url("../images/fondo-3-mesas-copas.png") no-repeat center center}
-.scndry-section{background:#ffe79e;padding:0 0 0 0;width:100%;height:100vh;overflow:auto;-moz-overflow:auto;-moz-overflow-x:auto;-moz-overflow-y:auto}
-.scndry-section h1{text-align:center;font-family:'Bentham';color:#fff;font-size:2em;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;width:100%;padding:200px 0 0 0;margin:0}
-.scndry-section h1:before{content:"-"}
-.scndry-section h1:after{content:"-"}
+.scndry-section{background:#fff;padding:0 0 50px 0;width:95%;margin:5px auto 20px auto;overflow-x:hidden;-moz-overflow-x:hidden;border-radius:5px;box-shadow:2px 1px 6px 0 rgba(0,0,0,0.6)}
+.scndry-section h1{text-align:center;font-family:'Bentham';color:#fff;font-size:2em;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;width:100%;padding:200px 0 0 0;margin:0 auto;border-top-left-radius:5px;border-top-right-radius:5px;position:relative}
+.scndry-section h1 span{width:100%;padding:5px 5px 0 5px;margin:0 auto 0 auto;background:rgba(0,0,0,0.4);display:inline-block;position:absolute;bottom:0;left:0}
+.scndry-section h1 span:before,.scndry-section h1 span content "-",.scndry-section h1 span:after{content:"-"}
 .scndry-section .contenido{width:74%;margin:20% 13% 0 13%;text-align:justify;color:#000;font-size:1em;font-family:'Vegur-Regular';font-weight:normal;display:block}
 .boton{position:fixed;display:block;background:rgba(0,0,0,0.9);text-decoration:none;top:25px;right:-15px;padding:8px;z-index:2;border-radius:10px}
 .boton:before{content:"\e601";color:#808080;font-family:'icomoon';font-style:normal;font-size:2em}
@@ -42,3 +41,5 @@ footer{z-index:50}
 .menu .media a{text-decoration:none;position:relative;font-size:1.3em;padding-right:10px}
 .menu .media .g:before{content:"\e60a";color:#fff;font-family:'icomoon';font-style:normal}
 .menu .media .f:before{content:"\e609";color:#fff;font-family:'icomoon';font-style:normal}
+.fb-photo-link{margin:30px auto;padding:0;width:auto;position:relative;text-align:center}
+.fb-photo-link img{width:125px;margin:10px;box-shadow:2px 1px 4px 2px rgba(0,0,0,0.3);display:inline-block}

@@ -111,31 +111,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3158,
+				"buffer_size": 3856,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/aside.js",
+			"file": "css/queries.styl",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/menu.js",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/scrollbar.js",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 613,
 				"line_ending": "Unix"
 			}
 		},
@@ -143,7 +127,7 @@
 			"file": "css/estilo.styl",
 			"settings":
 			{
-				"buffer_size": 5074,
+				"buffer_size": 5374,
 				"line_ending": "Unix"
 			}
 		},
@@ -151,7 +135,7 @@
 			"file": "js/scroll.js",
 			"settings":
 			{
-				"buffer_size": 3471,
+				"buffer_size": 4666,
 				"line_ending": "Unix"
 			}
 		},
@@ -159,7 +143,7 @@
 			"file": "js/footer.js",
 			"settings":
 			{
-				"buffer_size": 1727,
+				"buffer_size": 1614,
 				"line_ending": "Unix"
 			}
 		},
@@ -228,6 +212,12 @@
 	},
 	"file_history":
 	[
+		"/home/maxwell/git/Nautic/js/scroll.js",
+		"/home/maxwell/git/Nautic/css/queries.css",
+		"/home/maxwell/Dropbox/Dame Sexo y Fabri/Nautic-master/index.html",
+		"/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/aside.js",
+		"/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/menu.js",
+		"/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/scrollbar.js",
 		"/home/maxwell/git/Nautic/js/jquery.mousewheel.js",
 		"/home/maxwell/git/Nautic/index.html",
 		"/home/maxwell/git/Nautic/css/estilo.styl",
@@ -279,6 +269,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"var ",
+			"hidden",
+			"remove",
+			"add",
+			"hidden",
+			"overflow-x",
+			"moz",
+			"overflow hidden\n		-moz-overflow hidden\n		-moz-overflow-x hidden\n		-moz-overflow-y hidden",
+			"auto",
+			"hidden",
+			"auto",
+			"-50px",
+			"hidden",
+			"scroll",
+			"hidden",
 			"window",
 			"bot",
 			"top",
@@ -322,102 +327,20 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 3158,
+						"buffer_size": 3856,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3158,
-								3158
+								29,
+								29
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/aside.js",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 416.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/menu.js",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/media/598d4d9a-3307-4314-8e44-b94daca6e632/maxwell/GitHub/carloscueto/js/scrollbar.js",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -433,19 +356,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
-					"file": "css/estilo.styl",
+					"buffer": 1,
+					"file": "css/queries.styl",
 					"settings":
 					{
-						"buffer_size": 5074,
+						"buffer_size": 613,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4437,
-								4437
+								91,
+								91
 							]
 						],
 						"settings":
@@ -454,67 +377,93 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4335.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/estilo.styl",
+					"settings":
+					{
+						"buffer_size": 5374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1100,
+								1100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 867.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/scroll.js",
+					"settings":
+					{
+						"buffer_size": 4666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2979,
+								2979
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2040.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/footer.js",
+					"settings":
+					{
+						"buffer_size": 1614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1294,
+								1294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 944.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "js/scroll.js",
-					"settings":
-					{
-						"buffer_size": 3471,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2136,
-								2136
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1785.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "js/footer.js",
-					"settings":
-					{
-						"buffer_size": 1727,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1470,
-								1470
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1301.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "js/menu.js",
 					"settings":
 					{
@@ -536,7 +485,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 417.0,
+						"translation.y": 561.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -572,7 +521,7 @@
 		"cols":
 		[
 			0.0,
-			0.24696847211,
+			0.627324171382,
 			1.0
 		],
 		"rows":

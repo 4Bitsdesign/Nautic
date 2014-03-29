@@ -43,9 +43,11 @@ $(function(){
 
     function scrll(delta){
 
-      var posy = - delta*0.2;
+      var posy = - delta*0.5;
 
-      $('body').animate({
+      console.log(posy);
+
+      $('html, body').animate({
           scrollTop: '+=' + posy
           },      0);
     };
@@ -57,7 +59,7 @@ $(function(){
 		var siguiente = $(".siguiente");
 
 		var win_top = $('body').scrollTop();
-		var win_bot = $('body').scrollTop()+$('body').height();
+		var win_bot = $('body').scrollTop()+$(window).height();
 
 		var anterior_bot = 0;
 		for(var i = 0; i < cont_actual; i++)
@@ -70,14 +72,14 @@ $(function(){
 
 		var siguiente_top = actual_bot;
 
-		// console.log("-----------------------");
-		// console.log("anterior_bot "+anterior_bot); 
-		// console.log("actual_bot "+actual_bot);
-		// console.log("actual_top "+actual_top);
-		// console.log("siguiente_top "+siguiente_top);
-		// console.log("win_top "+win_top);
-		// console.log("win_bot "+win_bot);
-		// console.log("-----------------------");
+		console.log("-----------------------");
+		console.log("anterior_bot "+anterior_bot); 
+		console.log("actual_bot "+actual_bot);
+		console.log("actual_top "+actual_top);
+		console.log("siguiente_top "+siguiente_top);
+		console.log("win_top "+win_top);
+		console.log("win_bot "+win_bot);
+		console.log("-----------------------");
 
 		if(portrait){
 			if(win_top > (actual_top) && win_bot < (siguiente_top))
@@ -153,12 +155,14 @@ $(function(){
 
 	
 	$(document).on("vmousedown", function(event){
-			mouseDown = true;
+			mouseDown = false;
 			initPos = event.pageY;
+			console.log("down");
 	});
 
 	$(document).on("vmouseup", function(){
 			mouseDown = false;
+			console.log("up");
 	});
 
 	$(document).on("vmousemove", function(event){
@@ -177,6 +181,8 @@ $(function(){
 				var actual_bot = anterior_bot + actual.height();
 				
 				var delta = event.pageY - initPos;
+
+				console.log(delta);
 
 				scrll(delta);
 				hayScroll = true;
